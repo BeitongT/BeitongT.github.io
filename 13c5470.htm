@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://courses.cit.cornell.edu/ece5990/ECE5725_Fall2017_projects/bt346-qq39/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Smart Gym sensor</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="./5smartlock_files/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="./5smartlock_files/starter-template.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="5smartlock.htm">Smart Gym Sensor</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="5smartlock.htm">Home</a></li>
+                    <li><a href="5smartlock.htm#Design">Mechanical Design</a></li>
+                    <li><a href="5smartlock.htm#Circuit">Circuit Design</a></li>
+                    <li><a href="5smartlock.htm#ISIPS">Conference ISIPS 2016</a></li>
+                    <li><a href="https://www.google.com/patents/CN106310639A?cl=en&dq=ininventor:%22%E7%94%B0%E5%80%8D%E9%80%9A%22">Patent</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="starter-template">
+            <h1 class = "header1">Smart Gym sensor</h1>
+ 
+            <a href= "https://www.google.com/patents/CN106310639A?cl=en&dq=ininventor:%22%E7%94%B0%E5%80%8D%E9%80%9A%22" style="font-size: x-large; font-weight: bold;">Link to google patent.</a>
+            <br>
+            <h2 style="color:red">More contents will be added soon~</h2>
+            
+            <br>
+            <p class = "content">This project is my self research in my undergraduate school.</p>
+            <p class = "content">I believe this is the first smart lock pin which can automatically detect the weight you select on the fitness equipment like seated row machine, Chest press machine and so on. <p>
+        </div>
+        <hr>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/draft.JPG" alt="infinity image" style="width:70%;">
+            </div>
+            <br>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/system.png" alt="infinity image" style="width:80%;">
+                <p><i>Figure 1: the sensor design draft</i></p>
+
+            </div>   
+
+
+          <h4 style="text-align:center;">I used Solidworks to design the case of this sensor. </h4>
+
+          
+        <!-- </div> -->
+        <hr id="Design">
+        <div style="text-align:center;">
+            <h2>Mechanical Design</h2>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/render.JPG" alt="infinity image" style="width:80%;">
+                <p><i>Figure 2: the sensor renderings</i></p>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center;">
+            <h2>3D-Printing</h2>
+            <p class="content">
+                I used SLA to print the case.
+            </p>
+            <br>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/all.JPG" alt="infinity image" style="width:80%;">
+                <p><i>Figure 3: the sensor case</i></p>
+            </div>
+            <br>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/inside.png" alt="infinity image" style="width:40%;">
+                <p><i>Figure 4: the inside structure of the structure</i></p>
+            </div>
+        </div>       
+        <br>
+
+
+        <!-- </div> -->
+        <hr id="Circuit">
+        <div style="text-align:center;">
+            <h2>Infared Sensor Circuit</h2>
+            <p class="content">I used AltiumDesigner 14 to designed the infrared sensor board according to the sensor datasheet and make it to a printed circuit board.</p>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/infrared.png" alt="infinity image" style="width:80%;">
+                <p><i>Figure 5: the infrared sensor schematic</i></p>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center;">
+            <h2>Power System</h2>
+            <p class="content">
+                I designed the power system. I used a Li-ion battery as the main power supply and I converted it to 3.3v for both sensor and MCU.
+            </p>
+            <br>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/power.png" alt="infinity image" style="width:80%;">
+                <p><i>Figure 6: the power system schematic</i></p>
+            </div>
+            <br>      
+        <br>
+
+        <hr id="ISIPS">
+        <div style="text-align:center;">
+            <h2>ISIPS conference</h2>
+            <p class="content">I made a poster prensentation in ISIPS 2016.</p>
+
+            <div style="text-align:center;">
+                <h4>Presentation Paper</h4>
+                <button class="btn-info btn-lg" > <a href= "./5smartlock_files/smart gym lock pin.pdf"">
+                    Click to read the paper.</a>
+                </button>
+            </div>  
+            <br>
+            <br>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./5smartlock_files/ISIPS.jpg" alt="infinity image" style="width:40%;">
+                <p><i>Figure 7: poster presentation in ISIPS 2016</i></p>
+            </div>
+
+
+        </div>
+        <br>
+
+        <hr id="Patent">
+        <div style="text-align:center;">
+            <h2>Invention Patent</h2>
+            <p class="content">I had a invention patent for this project.</p>
+
+            <div style="text-align:center;">
+                <button class="btn-info btn-lg" > <a href= "https://www.google.com/patents/CN106310639A?cl=en&dq=ininventor:%22%E7%94%B0%E5%80%8D%E9%80%9A%22">
+                    Link to google patent.</a>
+                </button>
+            </div>  
+            <br>
+            <br>
+
+
+
+        </div>
+        <br>
+
+        
+
+        
+        
+
+
+
+
+
+</div>
+    <!-- /.container -->
+    <br>
+    <br>
+    <br>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./5smartlock_files/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="./5smartlock_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+
+</body></html>
+
+

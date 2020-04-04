@@ -1,0 +1,44 @@
+body {
+    padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+hr { margin: 20px 0 20px 0; }
+
+.center-block {  
+    /*width:640px;*/
+  display: block;  
+  margin-right: auto;  
+  margin-left: auto;  
+}  
+
+.content {
+	text-align: justify;
+	padding: 0px 30px;
+	font-size:20px;
+  font-family: "Avenir Next";
+}
+
+.header1 {
+  text-align: center;
+  /*padding: 0px 30px;*/
+  font-size:50px;
+  font-family: "Avenir Next";
+}
+.notification {
+  font-weight: bold;
+  text-align: center;
+  /*padding: 0px 30px;*/
+  font-size:30px;
+  font-family: "Avenir Next";
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}

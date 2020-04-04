@@ -1,0 +1,10 @@
+                      <a href="project01.html">Infinite Propeller Displayer</a>
+                      <a href="project02.html">M.ENG. Project</a>
+                      <a href="project02.html">Quatting Detection</a>
+                      <a href="project03.html">National Electrical Contest</a>
+                      <a href="project04.html">Smart Gym Sensor System</a>
+                      <a href="project04.html">Undergraduate Final Project</a>
+                      <a href="project04.html">Smart Car Contest</a>
+                      <a href="project04.html">Infinite Mirror Bluetooth Speaker</a>
+                      <a href="project04.html">8*8 Mechanical Displayer</a>
+                      <a href="project04.html">Music Spectrum Displaye</a>

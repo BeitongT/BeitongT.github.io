@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://courses.cit.cornell.edu/ece5990/ECE5725_Fall2017_projects/bt346-qq39/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>M.ENG. Program</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="./2M.ENG_files/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="./2M.ENG_files/starter-template.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="2M.ENG.htm">M.ENG. Project</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="2M.ENG.htm">Home</a></li>
+                    <li><a href="2M.ENG.htm#intro">Introduction</a></li>
+                    <li><a href="2M.ENG.htm#obj">Project Objective</a></li>
+                    <li><a href="2M.ENG.htm#design">Design</a></li>
+                    <li><a href="2M.ENG.htm#testing">Testing</a></li>
+                    <li><a href="2M.ENG.htm#result">Result</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="starter-template">
+            <h1 class = "header1">M.ENG. Project</h1>
+            <p class = "content">M.ENG. Progect is a training project for every Cornell 2M.ENG. student which lasts one year. My project name is Forte which is a startup focus on next generation gym wristband. </p>
+            <p class = "content">Last year, this program starts. During the last year, the former team was solving one problem. This year, we used one semester to solve the problem they didn't solve last year. So, we got a A+ for our project in the first semester.</p>
+        </div>
+        <hr>
+            <center><iframe width="840" height="473" src="https://www.youtube.com/embed/oB87r942epc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+          <h4 style="text-align:center;">Demonstration Video(Because the difference update rate between the camera and the displayer, we can see there are some shadow in the video. Actually the effect is really good!)</h4>
+
+          
+        <!-- </div> -->
+        <hr id="intro">
+        <div style="text-align:center;">
+            <h2>Introduction</h2>
+            <p class="content">
+                In Forte, we need to build a wristband prototype which can automatically detect the weight of the dumbbell. We have already achieved this function. In next step, we need to add more functions on this wristband and reduce the size of the prototype.
+            </p>
+        </div>
+        <hr id="obj">
+        <div class="row">
+            <div style="text-align:center;">
+                <h2>Project Objective</h2>
+            </div>
+            <p class="content">
+                We are making a smart wristband which not only allows the company to effortlessly track workouts and motion but also maps different movements to specific activities (i.e. mapping bicep curls, bench presses etc).
+            </p>
+        </div>
+        <hr id="design">
+        <div style="text-align:center;">
+            <h2>Design</h2>
+            <br>
+            <p class="content">We need to design a wristband to automatically detect the weight of the dumbbell. Based on this demand, we did lots of researches and finally gave three technical plans to our clients. </p>
+            <p class="content">1. Put the reader on the dumbbell and put the passive receiver on the wristband. </p>
+            <p class="content">This plan was denied because we need to charge each dumbbell which is too costy and complex and that's not what our client want. </p>
+            <p class="content">2. Put a sensor on the dumbbell and a sensor on the wristband. Both sensors can connect to the internet. And we will pair the user and the dumbbell according to the time when the sensor is triggered. </p>
+            <p class="content">This plan was denied because the whole system is too complex. </p>
+            <p class="content">3. Put the reader on the wristband and the receiver on the dumbbell. </p>
+
+            <p class="content">Finally, we accept this system. We decided to use the RFID technology to achieve the function of our product.</p>
+            <br><br>
+
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./2M.ENG_files/draft.jpeg" alt="infinity image" style="width:40%;">
+                <p><i>Figure 2: the draft of the plans</i></p>
+            </div>
+            <br>
+            <h3>RFID System</h3>
+            
+            <br>
+            <p class="content">
+                We will need the RFID technology to identify the weight of the dumbbell.</p>
+            <p class="content">
+                RFID system includes two parts, the first part is the reader and the second part is the receiver.</p> 
+            <br>
+            <h4 style="text-align:left;"><b>The reader</b></h4>
+
+            <p class="content">
+                The reader will generate the electromagnetic wave and read the signal sent back from the receiver. There are many kinds of reader. They are different in the frequency and the detect range(which is equal to signal magnitude). According to our demands and after doing many researches, we choose <b>the RFID chip from a Chinese company</b> which has a reading distance up to 40 cms.</p> 
+            <p class="content">
+                The reader signal is influenced by the <b>environment(humidity, metal) the relative angle between the reader and the receiver and the antenna.</b> We focused on these three factors and give the solvements to our clients.</p> 
+            <p class="content">
+                1. For the environment, we did some researches and some expeiments. We found the metal environment will significantly reduce the reading distance of the reader. But if we insert some insulation between the metal and the RFID tag the distance will increase a lot. So, we can insert some insulation material between the tag and the metal. </p> 
+            <p class="content">
+                2. For the orientation, we did some experiments and found the reading distance will not decrease significantly. So, it will be OK if our reader wants to read the signal from different directions.  </p> 
+            <p class="content">
+                3. For the antenna, we did some researches and experiments. We can roll our own antenna. The antenna will emit much stronger signal after a good tuning. </p> 
+            <p class="content">
+                Based on the above researches, we built a really good RFID reading system which can read from <b>17cms</b> away with a 7cm-diameter round antenna.
+            </p>
+            <p class="content">
+                As for the antenna, <b>we tuned the antenna by ourself</b>. Because we cannot find an antenna with a proper size. We used oscilloscope to tune the antenna and used a 3D-printing model to help us to roll the antenna. The effect of the antenna is really good. We got a 140 VPP output signal from the reader output.
+            </p>
+            <br>
+
+            <center><iframe width="840" height="473" src="https://www.youtube.com/embed/QLr9dSysIOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+          <h4 style="text-align:center;">Reading System Demonstration Video</h4>
+            <br>
+            <br>
+            <h4 style="text-align:left;"><b>The receiver(RFID Tag)</b></h4>
+            <p class="content">
+                The tag will receive the signal generated from the reader and the circuit in the tag will transfer part of the electromagnetic wave to power the chip inside the tag. And the chip inside the tag will generate the electromagnetic wave. And the reader will read the signal generate from the tag. So, a complete communication ends.
+            </p>
+
+            <p class="content">
+                For our project, we used the EM4100 thick card(thick card is easier for us to take the circuit out~). And becasue we will stick it on the back of a dumbbell. We need to care about the metal environment as discussed above. We just inserted some insulated materials between the card and the dumbbell. So our reader system is completed.
+            </p>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./2M.ENG_files/EM4100.jpg" alt="infinity image" style="width:40%;">
+                <p><i>Figure 3: the EM4100 card</i></p>
+            </div>
+            <br>
+            <br>
+            <h3>Microcontroller  </h3>
+        
+            <br>
+            <h4 style="text-align:left;"><b>RedBear Duo</b></h4>
+            <p class="content">
+                We want to achieve wirelessly detecting the dumbbell weight so we need to use microcontrollers with BLE module. We just want to verify the idea so we choose a module on the market to develop the wireless function. We choose to use the RedBear Duo to be our microcontroller because I am familiar with this mcu and can easily send and receive the data on portable device like mobile phone.
+            </p>
+            <p class="content">
+                I use the BLE library to read in the card number. And according to the datasheet of the EM4100. I decoded the card number and displayed it on the console.
+            </p>
+            
+            <br>
+            
+
+
+
+
+            
+
+        </div>
+        <hr id="testing">
+        <div style="text-align:center;">
+            <h2>Testing &amp Redesign</h2>
+            <h4 style="text-align:left;"><b>Testing</b></h4>
+            <p class="content">
+                Firstly, we test our RFID system. The RFID worked really well. We put the antenna on our wirst to imitate we are wearing a wristband. And the distance is enough to read the tag on a metal dumbbell. Because our RFID chip doesn't have a anti-conflict system, So, we need to test the RFID conflict, the reading range is proper to avoid the RFID conflict. When we put two tags on different dumbbell. We can read out the right answer.
+            </p>
+
+            <p class="content">
+                Then, we connect the RFID system and the microcontroller together. We powered the RFID system by usign the AA batteries(because this kind of power is the purest, we will develop a smaller power supply system by using the charge pump. )And we powered the microcontroller by using the Li-ion battery. We use the UART to read in the data and decode the data. And we give different card ID different weight. So, we can know the weight of the dumbbell from the card ID. At last, we print the data on the console.
+            </p>
+
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./2M.ENG_files/testresult.png" alt="infinity image" style="width:60%;">
+                <p><i>Figure 4: reading the card ID</i></p>
+            </div>
+
+            <p class="content">
+                And we developed the wireless program to send the data to the mobile phone. Now, we finished a embedded dumbbell detector prototype.
+            </p>
+
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./2M.ENG_files/wirelesstest.png" alt="infinity image" style="width:40%;">
+                <p><i>Figure 5: wireless test result</i></p>
+            </div>
+            <br><br>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./2M.ENG_files/all.jpg" alt="propeller displayer image" style="width:50%;">
+                <p><i>Figure 6: the whole system</i></p>
+            </div>
+
+            <p class="content">
+                In the second semester, we increased the wristband reading distance by isolating digital power and analog power. Taking advantage of longer detecting distance, we change the wristband geometry in a wearing friendly way as shown in Figure 7 and Figure 8. 
+            </p>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./2M.ENG_files/wristband2.png" alt="propeller displayer image" style="width:50%;">
+                <p><i>Figure 7: wristband with new geometry</i></p>
+            </div>
+            <br>
+            <div style="text-align:center;">
+                <img class="img-rounded" src="./2M.ENG_files/wristband.png" alt="propeller displayer image" style="width:50%;">
+                <p><i>Figure 8: wristband with new geometry</i></p>
+            </div>
+            </p>
+</div>
+            <br>
+            
+
+        
+        <hr>
+        <div class="row">
+            <h2>Code Appendix</h2>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ino">web_version.ino</button>
+            <div id="ino" class="collapse">
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">read</span>() { 
+    x <span style="color: #333333">=</span> Serial1.read(); 
+    <span style="color: #008800; font-weight: bold">if</span> (x <span style="color: #333333">!=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>) { 
+    <span style="color: #008800; font-weight: bold">if</span>(i <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">&amp;&amp;</span> i <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #333333">&amp;&amp;</span>i <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">&amp;&amp;</span>i <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">12</span><span style="color: #333333">&amp;&amp;</span> i<span style="color: #333333">!=</span><span style="color: #0000DD; font-weight: bold">13</span> ) { 
+        <span style="color: #008800; font-weight: bold">if</span> (x<span style="color: #333333">&gt;=</span><span style="color: #0000DD; font-weight: bold">48</span> <span style="color: #333333">&amp;&amp;</span> x<span style="color: #333333">&lt;=</span><span style="color: #0000DD; font-weight: bold">57</span>) 
+            x <span style="color: #333333">=</span> x <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">48</span>; 
+        <span style="color: #008800; font-weight: bold">else</span> 
+            x <span style="color: #333333">=</span> x <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">55</span>; 
+        fi <span style="color: #333333">=</span> fi <span style="color: #333333">&lt;&lt;</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #333333">|</span> x; 
+        rx_buf[i] <span style="color: #333333">=</span> <span style="color: #0044DD">&#39;A&#39;</span>; 
+        rx_buf[i] <span style="color: #333333">=</span> <span style="color: #333399; font-weight: bold">char</span>(x) ; 
+        } 
+        i<span style="color: #333333">++</span>; 
+        <span style="color: #008800; font-weight: bold">if</span> (i <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">14</span>) { 
+        Serial.write(fi); 
+        Serial.println(<span style="background-color: #fff0f0">&quot; finished&quot;</span>); 
+        <span style="color: #888888">//send the serial command to the server </span>
+        i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>; 
+        } 
+    } 
+}
+</pre></div>
+
+
+
+
+</div></div>
+    <!-- /.container -->
+    <br>
+    <br>
+    <br>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./2M.ENG_files/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="./2M.ENG_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+
+</body></html>
+
+

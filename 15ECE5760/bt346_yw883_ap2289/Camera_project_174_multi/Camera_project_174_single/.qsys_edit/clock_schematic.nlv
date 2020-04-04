@@ -1,0 +1,13 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst clock.clk_0 -pg 1 -lvl 1 -y 50
+preplace inst clock -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst clock.pll_0 -pg 1 -lvl 2 -y 30
+preplace netloc EXPORT<net_container>clock</net_container>(MASTER)pll_0.outclk1,(MASTER)clock.pll_0_outclk1_25175) 1 2 1 NJ
+preplace netloc POINT_TO_POINT<net_container>clock</net_container>(MASTER)clk_0.clk_reset,(SLAVE)pll_0.reset) 1 1 1 N
+preplace netloc EXPORT<net_container>clock</net_container>(MASTER)pll_0.outclk0,(MASTER)clock.pll_0_outclk0_24) 1 2 1 NJ
+preplace netloc POINT_TO_POINT<net_container>clock</net_container>(SLAVE)pll_0.refclk,(MASTER)clk_0.clk) 1 1 1 N
+preplace netloc EXPORT<net_container>clock</net_container>(SLAVE)clk_0.clk_in,(SLAVE)clock.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>clock</net_container>(SLAVE)clock.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+levelinfo -pg 1 0 50 550
+levelinfo -hier clock 60 90 270 400
